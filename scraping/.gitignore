@@ -1,0 +1,16 @@
+.project
+.idea/
+.envrc
+.python-version
+__pycache__/*
+*.py[cod]
+*.db
+.DS_Store
+.coverage
+static_collected/
+.~*
+*.swp
+test_index/
+#*.sqlite3
+pip.log
+
