@@ -29,15 +29,16 @@ Scraping Tools Setup on Ubuntu Reference Environment: ```•	Ubuntu 14.04.1 LTS 
 - Go to ```http://SERVER-IP:6800``` to confirm that Scrapyd web console is displayed.
 Note: if you found any issue. Please check attached file and permission.
 
-# Run curl: step 1: check services if scrapyd running then kill scrapyd. 
+# Run curl:
 
+- step 1: check services if scrapyd running then kill scrapyd. 
 - Step 2: ```sudo twistd -ny /etc/scrapyd/scrapyd.tac > /var/log/scrapyd/scrapyd.log 2>&1 &``` 
 - check server : ```http://localhost:6800/``` 
 - step 3: run curl in sequence. I. 
   ```cd /article-scraping/scraping``` 
- II. ```curl http://localhost:6800/schedule.json -d project=scraping -d spider=basePaging``` 
- III. Go through the ```url : http://localhost:6800/``` and check job running or not. Do not run second curl until first job not finished. 
- IV. when first job finished check csv creted or not if creted run second curl. 
- V. ```curl http://localhost:6800/schedule.json -d project=scraping -d spider=rookiestewArticleUrlSpider``` (when second job finished check csv creted or not if creted run third curl.) 
- VI. ```curl http://localhost:6800/schedule.json -d project=scraping -d spider=rookiestewDetailSpider``` 
- VII. For mail set your id and password
+- ```curl http://localhost:6800/schedule.json -d project=scraping -d spider=basePaging``` 
+- Go through the ```url : http://localhost:6800/``` and check job running or not. Do not run second curl until first job not finished. 
+- when first job finished check csv creted or not if creted run second curl. 
+- ```curl http://localhost:6800/schedule.json -d project=scraping -d spider=rookiestewArticleUrlSpider``` (when second job finished check csv creted or not if creted run third curl.) 
+- ```curl http://localhost:6800/schedule.json -d project=scraping -d spider=rookiestewDetailSpider``` 
+- For mail set your id and password
