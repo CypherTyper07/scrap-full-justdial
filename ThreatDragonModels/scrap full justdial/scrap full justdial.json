@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "title": "scrap full justdial",
+    "owner": "Ranvijay",
+    "description": "scrap-full-justdial"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "vivek"
+      },
+      {
+        "name": "sudhindrta"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "scrap full justdial",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "sudhindra"
+  }
+}
